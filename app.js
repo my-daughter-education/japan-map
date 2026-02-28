@@ -180,7 +180,9 @@ function showRank(time){
   const t = parseFloat(time);
   let rank = "C";
 
-  if(t < 120 && missCount === 0){
+  if(t <= 70 && missCount === 0){
+    rank = "神";
+  }else if(t < 120 && missCount === 0){
     rank = "SSS";
   }else if(t < 150 && missCount <= 2){
     rank = "SS";
