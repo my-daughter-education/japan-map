@@ -180,7 +180,7 @@ function showRank(time){
   const t = parseFloat(time);
   let rank = "C";
 
-  if(t <= 70 && missCount === 0){
+  if(t <= 75 && missCount === 0){
     rank = "神";
   }else if(t < 120 && missCount === 0){
     rank = "SSS";
@@ -202,4 +202,5 @@ function showRank(time){
   rankEl.innerHTML =
     "ランク: " + rank +
     "<br>タイム: " + t + "秒 / ミス: " + missCount;
+
 }
